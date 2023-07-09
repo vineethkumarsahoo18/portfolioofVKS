@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/75aede2885.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div id="header">
+      <div class="container">
+        <nav>
+          <img src="vLogo.jpeg" class="logo">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>           
+            <li><a href="#">Contact </a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>WEB DESIGNER</p>
+          <h1>Hey,This is <span>Vineeth Kumar Sahoo</span><br>from India</h1>
+        </div>
+      </div>
+
+     </div>
+     <!--------about------------->
+     <div id ="about">
+      <div class = "container">
+        <div class= "row">
+          <div class="about-col-1">
+            <img src="pic2.jpeg">
+          
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>I am Vineeth Kumar Sahoo from Vizag pursuing my btech from Dr. Lankapalli Bullayya College 
+              (2021-2025)
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Languages</span><br>HTMl,CSS,JS,C,C++,Java,Bacis of python </li>
+                <li><span> </span><br></li>
+                </ul>
+            </div>
+            <p class="tab-links active-link " onclick="opentab('experience')">Experience</p>
+              <div class="tab-contents active-tab" id="experience">
+                <br>
+              <ul>
+                <li><span>Current</span><br> Doing a internship on Full Stack from Edumoon </li>
+                </ul>
+                <br>
+              </div>
+              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+              <br>
+              <div class="tab-contents active-tab"  id="education">
+                <ul>
+                  <li><span>2019</span><br>Completed High Schooling from St. Aloysius Anglo Indian School </li>
+                  <li><span>2021</span><br>Completed my Intermediate from Sri Chaitanya Junior College</li>
+                  <li><span>2021-2025</span><br>pursuing btech from Dr. Lankapalli Bullayya College </li>
+                  </ul>
+                </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <!----------------->
+     <div id="=Contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left"></div>
+          <h4 id="van">contact me</h4><br>
+         
+         <div id="revi"> <i class="fa-solid fa-envelope"></i>vineethkumarsahoo08@gmail.com</p></div>
+          <p><i class="fa-solid fa-phone"></i>8121358414</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/vineethkumarsahoo18?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/vineethkumarsahoo_18?igshid=MzNlNGNkZWQ4Mg==/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vineeth-kumar-sahoo-025087239"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="contact-right"></div>
+        </div>
+      </div>     </div>
+<script>  
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+    
+     function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classlist.remove("active-link");
+      }
+      
+      for(tabcontent of tabcontents){
+        tabcontent.classlist.remove("active-tab");
+      }
+      event.currentTarget.classlist.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+     }
+     </script>
+</body>
+</html>
